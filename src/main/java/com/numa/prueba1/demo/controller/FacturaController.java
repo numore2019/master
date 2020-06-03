@@ -26,7 +26,11 @@ public class FacturaController {
         return facturaService.findById(id);
     }
 
+<<<<<<< HEAD
     @ResponseStatus(HttpStatus.CREATED) // Esto es opcional es una respuesta a mostrar al utilizar el controlador
+=======
+    @ResponseStatus(HttpStatus.CREATED) // Estos cambios son para segundarama
+>>>>>>> segundarama
     @PostMapping("/facturas")
     public Factura create(@RequestBody Factura factura){
         return facturaService.save(factura);
