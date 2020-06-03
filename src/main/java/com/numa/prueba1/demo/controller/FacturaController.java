@@ -26,7 +26,7 @@ public class FacturaController {
         return facturaService.findById(id);
     }
 
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.CREATED) // Esto es opcional es una respuesta a mostrar al utilizar el controlador
     @PostMapping("/facturas")
     public Factura create(@RequestBody Factura factura){
         return facturaService.save(factura);
