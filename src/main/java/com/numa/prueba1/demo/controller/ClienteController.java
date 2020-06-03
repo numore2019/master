@@ -27,7 +27,7 @@ public class ClienteController {
         return clienteService.findById(id);
     }
 
-    @ResponseStatus (HttpStatus.CREATED) // Este cambio es para segundarama
+    @ResponseStatus (HttpStatus.CREATED) // Comentario para compañero de equipo por favor no borrar
     @PostMapping ("/clientes")
     public Cliente create(@RequestBody Cliente cliente) {
         cliente.setFechaCreado(new Date());
