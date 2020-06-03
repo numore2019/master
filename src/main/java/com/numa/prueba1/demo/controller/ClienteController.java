@@ -27,7 +27,7 @@ public class ClienteController {
         return clienteService.findById(id);
     }
 
-    @ResponseStatus (HttpStatus.CREATED) // Esta parte es electiva es la respuesta al usar el controlador
+    @ResponseStatus (HttpStatus.CREATED) // Este cambio es para segundarama
     @PostMapping ("/clientes")
     public Cliente create(@RequestBody Cliente cliente) {
         cliente.setFechaCreado(new Date());
